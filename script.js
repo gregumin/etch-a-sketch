@@ -1,8 +1,4 @@
 const outerDiv = document.querySelector("#outerDiv");
-const allRow = document.querySelectorAll(".row");
-
-let rowNumber = 16;
-let columnNumber = 16;
 
 
 function createRow(rowNumber) {
@@ -11,7 +7,6 @@ function createRow(rowNumber) {
 
     const row = document.createElement("div");
     row.classList.add("row");
-    row.textContent = "row";
     outerDiv.appendChild(row);
 
     }
@@ -19,15 +14,20 @@ function createRow(rowNumber) {
 
 function createColumn(columnNumber) {
 
-    for (i=0;i<columnNumber;i++) {
+    const allRow = document.querySelectorAll(".row");
 
-    const column = document.createElement("div");
-    column.classList.add("column");
-    column.textContent = "column";
-    allRow.appendChild(column);
+    allRow.forEach(row => {
 
-    }
+        for (i=0;i<columnNumber;i++) {
 
+        const column = document.createElement("div");
+        column.classList.add("column");
+        row.appendChild(column);
+        }
+
+    })
+
+   
 }
 
 
@@ -45,6 +45,8 @@ createSketch(16,16)
 
 
 
+
+
 //create div rows v
 //set class v
 //use class div rows flex (in css) v
@@ -52,3 +54,6 @@ createSketch(16,16)
 //create div columns v
 //use loop to create many columndiv x
 //append columns to rows
+
+
+//you gotta appendchild column to row, only appendchild row
