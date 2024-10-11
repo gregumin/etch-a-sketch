@@ -3,19 +3,29 @@
     padding: 0px;
     border: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+h1 {
+    text-align: center;
+}
+
+#outerDiv {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height:30vw;
 }
 
 .row {
     display:flex;
-
 }
 
 .column {
-    width:15px;
-    height:15px;
-    border:2px solid black;
-
+    width:2vw;
+    height:2vw;
+    border:1px solid black;
+    flex-shrink: 1;
 
 
 }
