@@ -20,7 +20,7 @@ button{
 }
 
 #outerDiv {
-    border: 1px solid blue;
+    border: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
