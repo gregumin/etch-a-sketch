@@ -25,19 +25,18 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 500px;
+    width: 30vw;
+    aspect-ratio: 1 / 1;
     margin: auto;
-    padding: auto;
 }
 
 .row {
     display:flex;
-    max-width:500px;
+    width:30vw;
 }
 
 .column {
-    width:2vw;
+    width:100%;
     aspect-ratio: 1 / 1;
     border:1px solid black;
     flex-shrink: 1;
