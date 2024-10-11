@@ -22,7 +22,9 @@ function createColumn(columnNumber) {
 
         const column = document.createElement("div");
         column.classList.add("column");
-        column.addEventListener("mouseover", function(){this.style.backgroundColor = "black"})
+        column.addEventListener("mouseover", function(){this.style.backgroundColor = 
+            `rgb(${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)})`
+        })
         row.appendChild(column);
         }
 
