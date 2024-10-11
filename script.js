@@ -49,6 +49,11 @@ createSketch(16,16)
 
 function generateGrid() {
 
+    let rowResponse = prompt("How many rows?");
+    let columnResponse = prompt("How many columns?");
+    
+    if (rowResponse>100||columnResponse>100) {alert("Your PC will explode with that many rows/columns! (100 max)")} else {
+
     const allRow = document.querySelectorAll(".row");
 
         allRow.forEach(row => {
@@ -57,8 +62,8 @@ function generateGrid() {
 
         })
 
-    createSketch(16,16);
-
+    createSketch(rowResponse,columnResponse);
+    }
 
     }
     
