@@ -5,7 +5,7 @@ let rowNumber = 16;
 let columnNumber = 16;
 
 
-function createSketch(rowNumber,columnNumber) {
+function createRow(rowNumber) {
 
     for (i=0;i<rowNumber;i++) {
 
@@ -13,20 +13,20 @@ function createSketch(rowNumber,columnNumber) {
     row.classList.add("row");
     row.textContent = "row";
     outerDiv.appendChild(row);
-    for (i=0;i<columnNumber;i++) {
 
-        const column = document.createElement("div");
-        column.classList.add("column");
-        column.textContent = "column";
-        allRow.appendChild(column);
-    
-        }
     }
 }
 
 function createColumn(columnNumber) {
 
-    
+    for (i=0;i<columnNumber;i++) {
+
+    const column = document.createElement("div");
+    column.classList.add("column");
+    column.textContent = "column";
+    allRow.appendChild(column);
+
+    }
 
 }
 
@@ -34,10 +34,10 @@ function createColumn(columnNumber) {
 
 
 
-//function createSketch(rowNumber,columnNumber) {
-//createRow(rowNumber);
-//createColumn(columnNumber);
-//}
+function createSketch(rowNumber,columnNumber) {
+createRow(rowNumber);
+createColumn(columnNumber);
+}
 
 createSketch(16,16)
 
