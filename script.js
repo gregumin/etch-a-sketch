@@ -47,6 +47,28 @@ createSketch(16,16)
 
 
 
+function generateGrid() {
+
+    const allRow = document.querySelectorAll(".row");
+
+        allRow.forEach(row => {
+
+            row.remove();
+
+        })
+
+    createSketch(16,16);
+
+
+    }
+    
+    
+
+const btn = document.querySelector("#btnGrid")
+
+btn.addEventListener("click",generateGrid)
+//https://stackoverflow.com/questions/14829410/javascript-function-running-without-being-called
+
 
 //create div rows v
 //set class v
