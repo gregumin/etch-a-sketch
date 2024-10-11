@@ -38,7 +38,7 @@ button{
 .column {
     width:100%;
     aspect-ratio: 1 / 1;
-    border:1px solid black;
+    border:0px;
     flex-shrink: 1;
 
 
